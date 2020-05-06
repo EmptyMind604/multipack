@@ -1,0 +1,33 @@
+{
+    "name": "ezp/multipack",
+    "description": "Multipack wrapper php-laff",
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/EmptyMind604/multipack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Mackie",
+            "email": "james@mackie.me",
+            "homepage": "https://www.ezp.net",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/EmptyMind604/php-laff"
+        }
+    ],
+    "require": {
+        "cloudstek/php-laff": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ezp\\MultiPack\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/EmptyMind604/multipack/issues",
+        "source": "https://github.com/EmptyMind604/multipack"
+    }
+}
