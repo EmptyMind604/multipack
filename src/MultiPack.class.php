@@ -1,6 +1,8 @@
 <?php
 namespace Ezp;
 
+use \Cloudstek\PhpLaff\Packer;
+
 if (class_exists( 'Ezp\MultiPack')) {
     return;
 }
@@ -262,7 +264,7 @@ class MultiPack
     }
 
     function packContainer( $items, $container ) {
-        $laff = new \Ezp\PhpLaff\Packer();
+        $laff = new Packer();
         try {
             $laff->pack( $items, $container );
             $containerDim = $laff->get_container_dimensions();
